@@ -15,7 +15,7 @@ URL: str = 'http://gateway.marvel.com/v1/public/characters'
 
 MARVEL_PUBLIC_API_KEY = os.environ.get('MARVEL_PUBLIC_API_KEY')
 MARVEL_PRIVATE_API_KEY = os.environ.get('MARVEL_PRIVATE_API_KEY')
-APP_HOME = os.environ.get('APP_HOME')
+APP_HOME = os.environ.get('APP_HOME', os.environ.get('PWD'))
 
 parser = ArgumentParser(description='Command line input for Marvel Character API Consumer')
 parser.add_argument(

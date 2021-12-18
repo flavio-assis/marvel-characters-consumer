@@ -1,0 +1,2 @@
+-r requirements.txt
+aiounittest==1.4.0
